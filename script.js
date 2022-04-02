@@ -19,9 +19,14 @@ async function fetchAPI() {
   renderToHTML(data.hits);
   console.log(data.hits);
 }
+
 function renderToHTML(searchResults) {
   let html = "";
   searchResults.forEach((result) => {
+    let a = [];
+    result.recipe.ingredientLines.map((ingredient) => {
+      a.push(`<li class="list-group-item">${ingredient}</li>`);
+    });
     html += `<div class="card " style="width: 18rem;">
   <img src="${result.recipe.image}" class="card-img-top" alt="...">
   <div class="card-body">
@@ -29,9 +34,7 @@ function renderToHTML(searchResults) {
     <p class="card-text">calories ${result.recipe.calories.toFixed(2)}</p>
   </div>
   <ul class="list-group list-group-flush">
-  ${result.recipe.ingredientLines.forEach((ingredient) => {
-    `<li class="list-group-item">${ingredient}</li>`;
-  })}
+   ${a}
 
     </ul>
   <div class="card-body">
@@ -41,3 +44,8 @@ function renderToHTML(searchResults) {
   });
   recipeContainer.innerHTML += html;
 }
+
+/*
+${result.recipe.ingredientLines.forEach((ingredient) => {
+     return `<li class="list-group-item">${ingredient}</li>}`;
+   })}*/
