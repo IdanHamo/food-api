@@ -35,9 +35,7 @@ function renderToHTML(searchResults) {
 
     </ul>
   <div class="card-body">
-    <a href="${
-      result.recipe.url
-    }" class="card-link" target="_blank">Card link</a>
+    <a href="${result.recipe.url}" class="card-link" target="_blank">Recipe</a>
   </div>
 </div>`;
   });
