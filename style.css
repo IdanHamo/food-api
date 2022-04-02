@@ -1,1 +1,64 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+section {
+  min-height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #1b1a1a;
+}
+
+.container {
+  width: 90%;
+  margin: 0;
+}
+
+.container #header {
+  text-align: center;
+  font-size: 3rem;
+  color: antiquewhite;
+}
+
+.container .input-div {
+  width: 90%;
+  margin: 30px;
+}
+
+.container .input-div input {
+  background-color: aliceblue;
+  padding: 5px;
+  width: 100%;
+  border-radius: 6px;
+  font-size: 1.2rem;
+}
+
+.search-result {
+  -webkit-margin-before: 50px;
+          margin-block-start: 50px;
+  width: 100%;
+}
+
+.search-result #item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/*# sourceMappingURL=style.css.map */

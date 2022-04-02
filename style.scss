@@ -1,0 +1,44 @@
+section {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(27, 26, 26);
+}
+.container {
+  width: 90%;
+  margin: 0;
+  #header {
+    text-align: center;
+    font-size: 3rem;
+    color: antiquewhite;
+  }
+  .input-div {
+    width: 90%;
+    margin: 30px;
+    input {
+      background-color: aliceblue;
+      padding: 5px;
+      width: 100%;
+      border-radius: 6px;
+      font-size: 1.2rem;
+    }
+  }
+}
+.search-result {
+  margin-block-start: 50px;
+  width: 100%;
+
+  #item {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.card {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
